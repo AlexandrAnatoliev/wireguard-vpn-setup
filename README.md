@@ -4,4 +4,4 @@
 
 [Аренда vps-сервера TimeWeb](vps-rental.md)
 
-[Соединение с vps-сервером посредством ssh](connecting-to-vps-by-ssh.md]
+[Соединение с vps-сервером посредством ssh](connecting-to-vps-by-ssh.md)
