@@ -43,6 +43,7 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -t nat -D POSTROUTING -
 
 В примере в строках PostUp и PostDown использован сетевой интерфейс **eth0** (у вас может быть и другой)
 Вставляем вместо **<privatekey>** содержимое файла **/etc/wireguard/privatekey**
+
 * Настраиваем ip форвардинг:
 
 `echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf`
@@ -86,3 +87,13 @@ PublicKey = <client_publickey>
 AllowedIPs = 10.0.0.2/32
 ```
 
+Перезагружаем **systemctl** сервис с **wireguard**
+
+```
+systemctl restart wg-quick@wg0
+systemctl status wg-quick@wg0
+```
+
+На локальной машине (клиенте) создаем текстовый файл с конфигом клиента
+
+`vim client_wb.conf`
