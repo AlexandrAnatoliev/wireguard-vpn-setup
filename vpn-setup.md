@@ -6,6 +6,8 @@
 
 * [Подключаемся к vps-серверу по ssh](connecting-to-vps-by-ssh.md)
 
+* [Генерируем ssh-ключи](copying-files-over-ssh.md)
+
 * Обновляем пакеты на сервере
 
 `apt update && apt upgrade -y`
