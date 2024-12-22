@@ -140,7 +140,8 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 
-Вставляем вместо **<client_privatekey>** содержимое файла **/etc/wireguard/client_privatekey**, вместо **<publickey>** - **/etc/wireguard/publickey**, **<server-ip>** заменяем на ip сервера.
+Вставляем вместо **<client_privatekey>** содержимое файла **/etc/wireguard/client_privatekey**, вместо **<publickey>** -
+**/etc/wireguard/publickey**, **<server-ip>** заменяем на ip сервера.
 
 * Этот конфигурационный файл открываем в **wireguard-клиенте** телефона или компьютера.
 
