@@ -18,7 +18,7 @@
 
 * Генерируем ключи **wireguard**-сервера
 
-`wg genkey | tee /etc/privatekey | wg pubkey | tee /etc/wireguard/publickey`
+`wg genkey | tee /etc/wireguard/privatekey | wg pubkey | tee /etc/wireguard/publickey`
 
 Сгенерированные публичный и приватный ключи будут сохранены в соответствующих файлах
 
